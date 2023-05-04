@@ -1,6 +1,6 @@
-# @napolab/typescript
+# @napolab/vite
 
-This is a template repository for writing TypeScript when @naporin0624 writes TypeScript.
+This is a template repository for writing react when @naporin0624 writes react.
 
 ## recommended
 
