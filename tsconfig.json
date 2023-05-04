@@ -1,12 +1,18 @@
 {
-  "extends": ["@tsconfig/recommended/tsconfig.json", "@tsconfig/node18/tsconfig.json", "@tsconfig/esm/tsconfig.json"],
+  "extends": [
+    "@tsconfig/recommended/tsconfig.json",
+    "@tsconfig/esm/tsconfig.json",
+    "@tsconfig/vite-react/tsconfig.json"
+  ],
   "compilerOptions": {
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
     "types": ["vitest/globals"],
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@adapters/*": ["src/adapters/*"]
+      "@utils/*": ["src/utils/*"],
+      "@theme/css": ["src/theme/styles.css.ts"],
+      "@theme/*": ["src/theme/*"]
     }
   },
   "include": ["src", "types"],
