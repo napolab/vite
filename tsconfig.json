@@ -11,10 +11,11 @@
     "baseUrl": ".",
     "paths": {
       "@utils/*": ["src/utils/*"],
+      "@theme/*": ["src/theme/*"],
       "@theme/css": ["src/theme/styles.css.ts"],
-      "@theme/*": ["src/theme/*"]
+      "@components/*": ["src/components/*"]
     }
   },
-  "include": ["src", "types"],
+  "include": ["src", "types", "vitest-setup.ts"],
   "exclude": ["node_modules", "dist"]
 }
