@@ -34,6 +34,7 @@ const config = {
       rules: {
         "react/jsx-no-bind": "off",
         "no-restricted-imports": "off",
+        "testing-library/no-unnecessary-act": "off",
       },
     },
     {
