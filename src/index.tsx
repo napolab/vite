@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 
-import { getElementById } from "@utils/dom/getElementById";
+import { getElementById } from "@utils/dom/get-element-by-id";
 
 import App from "./app";
 
