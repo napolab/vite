@@ -1,6 +1,8 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import { mergeConfig } from "vite";
 
+const baseURL = process.env.STORYBOOK_BASE ?? "";
+
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -22,6 +24,7 @@ const config: StorybookConfig = {
   },
   async viteFinal(config) {
     return mergeConfig(config, {
+      base: baseURL,
       optimizeDeps: {
         include: ["storybook-dark-mode"],
       },
