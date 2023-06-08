@@ -1,5 +1,3 @@
-// Component: ToggleTheme
-
 import { action } from "@storybook/addon-actions";
 
 import ToggleTheme from ".";
