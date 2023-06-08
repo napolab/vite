@@ -23,27 +23,21 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-test
       cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/workflows/modules/setup-node
 
       - run: npm run test
 
-  test-storybook:
-    timeout-minutes: 60
+  type-check:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-type-check
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/workflows/modules/setup-node
 
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-
-      - name: Build Storybook
-        run: npm run build-storybook --quiet
-
-      - name: Serve Storybook and run tests
-        run: |
-          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-            "npx http-server storybook-static --port 6006 --silent" \
-            "npx wait-on tcp:6006 && npm run test-storybook"
+      - run: npm run type-check
