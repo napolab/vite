@@ -46,6 +46,13 @@ const config = {
         "import/no-extraneous-dependencies": "off",
       },
     },
+    {
+      files: ["types/*.d.ts"],
+      rules: {
+        "import/no-extraneous-dependencies": "off",
+        "no-restricted-imports": "off",
+      }
+    }
   ],
 };
 

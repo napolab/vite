@@ -6,5 +6,5 @@ import App from "./app";
 
 getElementById("app").match(
   (element) => createRoot(element).render(<App />),
-  (err) => alert(err)
+  (err) => alert(err),
 );
