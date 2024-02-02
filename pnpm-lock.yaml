@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@acab/reset.css':
-    specifier: ^0.5.3
-    version: 0.5.3
+    specifier: ^0.8.0
+    version: 0.8.0
   '@radix-ui/react-toggle':
     specifier: ^1.0.2
     version: 1.0.3(@types/react-dom@18.2.18)(@types/react@18.2.51)(react-dom@18.2.0)(react@18.2.0)
@@ -180,8 +180,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@acab/reset.css@0.5.3:
-    resolution: {integrity: sha512-pICfxGIMPgPCEm3lCpA16c00IKnpLeZmt7VtNoNfQX38jx7GuP0uEaUkU/QSxbWJaLmvAFpUJHwCLYZrMt2K7w==}
+  /@acab/reset.css@0.8.0:
+    resolution: {integrity: sha512-uLTamlIusQU1Y7d4Wc68Zh7XfqYL6xEFHP8AcXh4gTizWeEnM7NEeGBbmTLBc0zzdJSTzjYKnyQhmJ3BLFz6og==}
     dev: false
 
   /@adobe/css-tools@4.3.3:
