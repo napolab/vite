@@ -44,7 +44,7 @@
     "@storybook/builder-vite": "^7.0.9",
     "@storybook/react": "^7.0.9",
     "@storybook/react-vite": "^7.0.9",
-    "@storybook/test-runner": "^0.16.0",
+    "@storybook/test-runner": "^0.24.0",
     "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^6.4.1",
     "@testing-library/react": "^14.0.0",
